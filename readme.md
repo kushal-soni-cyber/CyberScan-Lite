@@ -35,9 +35,11 @@
    python main.py
    ```
 
+## Main Window
 ![Main Window](screenshots/main_window.png)
 
-![Main Window](screenshots/html_report.png)
+## Html Report
+![Html Report](screenshots/html_report.png)
    
 ## Usage
 
