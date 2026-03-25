@@ -34,6 +34,10 @@
    ```bash
    python main.py
    ```
+
+![Main Window](screenshots/main_window.png)
+
+![Main Window](screenshots/html_report.png)
    
 ## Usage
 
