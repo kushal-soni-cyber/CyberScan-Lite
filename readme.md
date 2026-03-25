@@ -53,6 +53,9 @@
 ![Main Window](screenshots/main_window.png)
 
 
+---
+
+
 ## Html Report
 ![Html Report](screenshots/html_report.png)
   
