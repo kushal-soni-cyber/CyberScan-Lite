@@ -98,16 +98,20 @@ class MainWindow:
         results_frame = ttk.LabelFrame(main_frame, text="Results", padding=5)
         results_frame.pack(fill=BOTH, expand=True, pady=10)
 
+        # After creating the treeview, configure columns
         columns = ("port", "service", "version", "os")
         self.tree = ttk.Treeview(results_frame, columns=columns, show="headings", height=15)
-        self.tree.heading("port", text="Port")
-        self.tree.heading("service", text="Service")
-        self.tree.heading("version", text="Version")
-        self.tree.heading("os", text="OS")
-        self.tree.column("port", width=80)
-        self.tree.column("service", width=150)
-        self.tree.column("version", width=250)
-        self.tree.column("os", width=200)
+
+        # Configure each column
+        self.tree.heading("port", text="Port", anchor='center')
+        self.tree.heading("service", text="Service", anchor='center')
+        self.tree.heading("version", text="Version", anchor='center')
+        self.tree.heading("os", text="OS", anchor='center')
+
+        self.tree.column("port", width=80, anchor='center')
+        self.tree.column("service", width=150, anchor='center')
+        self.tree.column("version", width=250, anchor='center')
+        self.tree.column("os", width=200, anchor='center')
 
         scrollbar = ttk.Scrollbar(results_frame, orient=VERTICAL, command=self.tree.yview)
         self.tree.configure(yscrollcommand=scrollbar.set)
